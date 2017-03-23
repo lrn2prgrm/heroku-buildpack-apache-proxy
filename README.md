@@ -20,7 +20,8 @@ you want to include files for the document root you can include a `www` director
 The detect phase of the buildpack will look for either a file named `proxy_on` in the root of an app, or for the
 aforementioned `conf` directory to exist in order to detect it as a candidate for this buildpack.
 
-Set the PROXY_URL config variable on your app to set the target for the reverse proxy.
+Fork Changes:
+I removed the default proxy rule with the environment variable. The optional conf/\*.conf files are the place to define this rules.
 
 Meta
 ----
