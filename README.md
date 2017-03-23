@@ -21,6 +21,7 @@ The detect phase of the buildpack will look for either a file named `proxy_on` i
 aforementioned `conf` directory to exist in order to detect it as a candidate for this buildpack.
 
 Fork Changes:
+-------------
 I removed the default proxy rule with the environment variable. The optional conf/\*.conf files are the place to define this rules.
 
 Meta
